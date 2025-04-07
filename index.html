@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>ANNY - 3D Shape Library</title>
+  <!-- Add Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <!-- Replace the text ANNY with this new logo design -->
+      <div class="logo-container">
+        <i class="fas fa-robot"></i> 
+        <span>ANNY</span>
+      </div>
+    </div>
+    <!-- Add this hamburger menu button -->
+    <div class="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+        <a href="quote.html">Quote</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="text">
+    <h1>A massive library of <br>free 3D shapes</h1>
+    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p>
+    <form>
+      <input type="email" placeholder="Your email address" required />
+      <button type="submit">Download</button>
+    </form>
+  </div>
+   
+  <div class="image">
+    <img src="./images/Group.jpg" alt="3D Shapes" />
+    
+  </div>
+  </div>
+  </section>
+
+  <!-- Footer with Social Links -->
+<footer class="footer">
+  <p>Follow us on</p>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+</footer>
+
+<!-- Replace the existing script tag at the bottom of your file -->
+<script>
+    document.querySelector('.mobile-menu').addEventListener('click', function() {
+        const menuIcon = this.querySelector('i');
+        menuIcon.classList.toggle('fa-bars');
+        menuIcon.classList.toggle('fa-xmark');
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+</script>
+</body>
+</html>
+
